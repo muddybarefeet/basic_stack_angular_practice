@@ -1,0 +1,6 @@
+.border {
+  border: 1px solid blue;
+  width: 100px;
+  text-align: center;
+  padding-top: 10px;
+}

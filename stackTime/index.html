@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app='stack'>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
+    <title>StackTime</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1>Stack</h1>
+    
+    <button><a href="/#/view">Stack</a></button>
+    <button><a href="/#/editor">Editor</a></button>
+
+    <div ng-view></div>
+    <!-- the ng-view directive is where our templates will be loaded into when naviagted to -->
+
+    <script src="factory.js"></script>
+    <script src="controllers/stackViewController.js"></script>
+    <script src="controllers/stackEditorController.js"></script>
+    <script src="app.js"></script>
+
+  </body>
+</html>

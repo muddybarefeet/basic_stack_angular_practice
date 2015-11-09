@@ -1,0 +1,19 @@
+
+<div id='container' ng-controller="stackEditorController">
+
+  <h1>Stack Editor</h1>
+
+  <p>Current max stack size: {{ stackSize }}</p>
+
+  <form>
+
+  <p>Enter a number between 1 and 10:</p>
+  <input type="number" name="input" ng-model="newSize" placeholder="new max value">
+
+  <button ng-click="updateMax();">Change</button>
+
+<!--   <div ng-if='shortlyForm.link.$error.required && shortlyForm.$dirty' class="message error">
+    <p>Url required</p>
+  </div> -->
+
+</div>

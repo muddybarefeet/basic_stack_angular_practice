@@ -1,0 +1,19 @@
+
+<div id='container' ng-controller="stackViewController">
+
+  <h1>Stack View</h1>
+
+  <button ng-click="push();" ng-model="stack" data-ng-disabled="checkLength()">Push</button>
+  <input type="text" ng-model="pushVal" placeholder="value to push" ng-disable="">
+
+  <button ng-click="pop();">Pop</button>
+
+  <p>Max stack size: {{ maxSize }}</p>
+
+  <div ng-repeat="element in stack" class="border"><div> {{  element }} <div></div>
+
+
+
+  <ul></ul>
+
+</div>
